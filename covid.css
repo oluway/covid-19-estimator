@@ -8,7 +8,10 @@ body {
     background-color: #fff
     
 }
-
+.authur {
+  font-size: 13px;
+  color: #000;
+}
 
 .olucontainer {
     width: 400px !important;
