@@ -14,32 +14,36 @@
   <h1>Covid-19 Estimator</h1>
   <form>
     <div class="form-group">
-      <label for="population">Population</label>
-      <input type="text" class="form-control" id="population" placeholder="Population" name="data-population">
+      <label for="data-population">Population</label>
+      <input type="text" class="form-control" id="population" placeholder="Population" 
+             data-population="" value="population">
     </div>
     <div class="form-group">
-      <label for="timeToElapse">Time To Elapse</label>
-      <input type="number" class="form-control" id="timeToElapse" placeholder="Time To Elapse" name="data-time-to-elapse">
+      <label for="data-time-to-elapse">Time To Elapse</label>
+      <input type="number" class="form-control" id="timeToElapse" placeholder="Time To Elapse" 
+             data-time-to-elapse="" value={timeToElapse} onChange={e=>setTimeToElapse(e.target.value)}>
     </div>
     <div class="form-group">
-      <label for="reportedCases">Reported Cases</label>
-      <input type="number" class="form-control" id="reportedCases" placeholder="Reported Cases" name="data-reported-cases">
+      <label for="data-reported-cases">Reported Cases</label>
+      <input type="number" class="form-control" id="reportedCases" placeholder="Reported Cases" 
+             data-reported-cases="" value={reportedCases} onChange={e=>setReportedCases(e.target.value)}>
     </div>
     <div class="form-group">
-      <label for="totalHospitalBeds">Total Hospital Beds</label>
-      <input type="number" class="form-control" id="totalHospitalBeds" placeholder="Total Hospital Beds" name="data-total-hospital-beds">
+      <label for="data-total-hospital-beds">Total Hospital Beds</label>
+      <input type="number" class="form-control" id="totalHospitalBeds" placeholder="Total Hospital Beds" 
+             data-total-hospital-beds="" value={totalHospitalBeds} onChange={e=>setTotalHospitalBeds(e.target.value)}>
     </div>
    
     <div class="form-group">
-      <label  for="periodType">Select Period Type</label>
-      <select class="custom-select mr-sm-2" id="periodType" name="data-period-type">
+      <label  for="data-period-type">Select Period Type</label>
+      <select class="custom-select mr-sm-2" id="periodType" data-period-type="" value={periodType} onChange={e=>setPeriodType(e.target.value)}>
         
         <option value="days">Days</option>
         <option value="weeks">Weeks</option>
         <option value="months">Months</option>
       </select>
     </div>
-    <button type="submit" class="button" name="data-go-estimate">Estimate</button>
+    <button type="submit" class="button" data-go-estimate="">Estimate</button>
   </form>
 </div>
 
