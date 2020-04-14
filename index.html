@@ -16,27 +16,27 @@
     <div class="form-group">
       <label for="data-population">Population</label>
       <input type="text" class="form-control" id="population" placeholder="Population" 
-             data-population="" value="population" onChange={ e => setPopulation(e.target.value)}>
+             data-population="population">
     </div>
     <div class="form-group">
       <label for="data-time-to-elapse">Time To Elapse</label>
       <input type="number" class="form-control" id="timeToElapse" placeholder="Time To Elapse" 
-             data-time-to-elapse="" value={timeToElapse} onChange={ e => setTimeToElapse(e.target.value)}>
+             data-time-to-elapse="timeToElapse">
     </div>
     <div class="form-group">
       <label for="data-reported-cases">Reported Cases</label>
       <input type="number" class="form-control" id="reportedCases" placeholder="Reported Cases" 
-             data-reported-cases="" value={reportedCases} onChange={ e => setReportedCases(e.target.value)}>
+             data-reported-cases="reportedCases" >
     </div>
     <div class="form-group">
       <label for="data-total-hospital-beds">Total Hospital Beds</label>
       <input type="number" class="form-control" id="totalHospitalBeds" placeholder="Total Hospital Beds" 
-             data-total-hospital-beds="" value={totalHospitalBeds} onChange={ e => setTotalHospitalBeds(e.target.value)}>
+             data-total-hospital-beds="totalHospitalBeds" >
     </div>
    
     <div class="form-group">
       <label  for="data-period-type">Select Period Type</label>
-      <select class="custom-select mr-sm-2" id="periodType" data-period-type="" value={periodType} onChange={ e => setPeriodType(e.target.value)}>
+      <select class="custom-select mr-sm-2" id="periodType" data-period-type="periodType">
         
         <option value="days">Days</option>
         <option value="weeks">Weeks</option>
